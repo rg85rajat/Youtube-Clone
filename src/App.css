@@ -1,0 +1,59 @@
+/* App.css */
+
+/* Styling for the whole app container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Styling for the main container */
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Styling for the search bar */
+  .SearchBar {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the grid container */
+  .GridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  /* Styling for the video description component */
+  .Description {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  /* Styling for the video list component */
+  .VideoList {
+    flex: 1;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .GridContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .Description, .VideoList {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
